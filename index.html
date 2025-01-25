@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Banner</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .background-box {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 90%;
+            height: 80%;
+            background: #222;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        .header-bar {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%; /* Adjusted to match the width of the background box */
+            text-align: center;
+            background: red;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-bar span {
+            margin-left: 5px;
+        }
+
+        .banner {
+            background: #111;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            width: 60%;
+            height: 100px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .profile-button {
+            background: red;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 15px;
+            border: none;
+            cursor: default;
+            pointer-events: none;
+            text-transform: uppercase;
+        }
+
+        .service-button {
+            background: #444;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 20px;
+            text-align: center;
+            width: 30%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .service-button:hover {
+            background: red;
+        }
+
+        .service-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-box">
+        <div class="service-row">
+            <button class="service-button">Pinterest Followers</button>
+            <button class="service-button">Tumblr Followers</button>
+            <button class="service-button">Instagram Followers</button>
+            <button class="service-button">Instagram Likes</button>
+            <button class="service-button">Instagram Video Views</button>
+            <button class="service-button">Instagram Story Views</button>
+        </div>
+        <div class="service-row">
+            <button class="service-button">Instagram IGTV Views</button>
+            <button class="service-button">YouTube Subscribers</button>
+            <button class="service-button">YouTube Views</button>
+            <button class="service-button">YouTube Comments</button>
+            <button class="service-button">Twitter Followers</button>
+            <button class="service-button">Twitter Likes</button>
+        </div>
+        <div class="service-row">
+            <button class="service-button">Twitter Views</button>
+            <button class="service-button">Twitch Views</button>
+            <button class="service-button">SoundCloud Followers</button>
+            <button class="service-button">SoundCloud Likes</button>
+            <button class="service-button">SoundCloud Plays</button>
+            <button class="service-button">SoundCloud Promotion</button>
+        </div>
+        <div class="service-row">
+            <button class="service-button">TikTok Followers</button>
+            <button class="service-button">TikTok Fans</button>
+            <button class="service-button">TikTok Comments</button>
+            <button class="service-button">TikTok Likes</button>
+            <button class="service-button">TikTok Views</button>
+            <button class="service-button">Facebook Likes</button>
+        </div>
+        <div class="service-row">
+            <button class="service-button">Facebook Followers</button>
+            <button class="service-button">Spotify Followers</button>
+            <button class="service-button">Spotify Plays</button>
+            <button class="service-button">Reddit Upvotes</button>
+            <button class="service-button">LinkedIn Followers</button>
+            <button class="service-button">LinkedIn Likes</button>
+        </div>
+        <div class="service-row">
+            <button class="service-button">Discord Members</button>
+        </div>
+    </div>
+    <div class="header-bar">
+        Free Followers <span>🎁</span>
+    </div>
+    <div class="banner">
+        <div class="profile-button">Profile</div>
+    </div>
+</body>
+</html>
 
